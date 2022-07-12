@@ -1,0 +1,223 @@
+<template>
+  <view class="pages">
+    <!-- #ifndef APP-PLUS -->
+    <v-google-translate
+      v-show="false"
+      :languages="[
+        {
+          code: 'en',
+          name: 'English',
+          cname: '英语',
+          ename: 'English',
+        },
+        {
+          code: 'zh-TW',
+          name: 'Chinese (Traditional)',
+          cname: '中文 (繁体)',
+          ename: 'Chinese (Traditional)',
+        },
+      ]"
+    ></v-google-translate>
+    <!--  #endif -->
+
+    <!-- <v-google-translate
+      v-show="false"
+      :languages="[
+        {
+          code: 'ja',
+          name: 'にほんご',
+          cname: '日语',
+          ename: 'Japanese',
+        },
+        {
+          code: 'en',
+          name: 'English',
+          cname: '英语',
+          ename: 'English',
+        },
+        {
+          code: 'zh-TW',
+          name: 'Chinese (Traditional)',
+          cname: '中文 (繁体)',
+          ename: 'Chinese (Traditional)',
+        },
+      ]"
+    ></v-google-translate> -->
+    <tab-sort-screen @change="onTabSort" @search="onSearch" />
+    <lk-load-list
+      ref="load"
+      top="196"
+      @init="loadInit"
+      :down="downOption"
+      @down="downCallback"
+      :up="upOption"
+      @up="upCallback"
+    >
+      <view class="list">
+        <panel-group
+          v-for="(item, index) in list"
+          :key="index"
+          :to="item.to"
+          :logo="item.logo"
+          :title="item.title"
+          :score="item.score"
+          :goods="item.goods"
+          :backgroundImage="item.background"
+          :collection="item.collection"
+          :fictitious_collection="item.fictitious_collection"
+          :fictitious_order="item.fictitious_order"
+          :goods_count="item.goods_count"
+        >
+          <view class="tag" slot="tag">
+            <lk-tag class="t" type="danger" v-if="item.shop_id == 0">
+              自營
+            </lk-tag>
+            <lk-tag class="t" type="primary" v-if="item.has_store == 1">
+              O2O
+            </lk-tag>
+          </view>
+        </panel-group>
+      </view>
+    </lk-load-list>
+    <lk-shortcut-entry />
+    <!-- #ifndef MP-WEIXIN -->
+    <lk-tabbar />
+    <!--  #endif -->
+  </view>
+</template>
+
+<script>
+import { WXSHOPLIST } from "@/common/interface/smallshop";
+import loadMixin from "@/mixins/load-list";
+import tabSortScreen from "./component/list/tab-sort-screen";
+import panelGroup from "../store/component/panel-group";
+export default {
+  name: "pages-smallshop-list",
+  data() {
+    return {
+      params: {},
+      upOption: {
+        empty: {
+          type: "shop",
+          tip: "暫無店鋪",
+        },
+      },
+      tabs: [
+        {
+          name: "全部",
+          sort: false,
+          isShow: true,
+        },
+        {
+          name: "銷量",
+          icon: "v-icon-sort2",
+          sort: "sale_num",
+          sort_type: "DESC",
+          isShow: true,
+        },
+        {
+          name: "人氣",
+          icon: "v-icon-sort2",
+          sort: "shop_collect",
+          sort_type: "DESC",
+          isShow: true,
+        },
+        {
+          name: "評分",
+          icon: "v-icon-sort2",
+          sort: "comprehensive",
+          sort_type: "DESC",
+          isShow: true,
+        },
+        {
+          name: "附近門店",
+          disabled: true,
+          sort: false,
+          isShow: false,
+        },
+      ],
+    };
+  },
+  mixins: [loadMixin],
+  onLoad() {
+    this.params = {
+      page_index: 1,
+      page_size: 20,
+
+      search_text: "",
+      order: "",
+      sort: "",
+      shop_group_id: "",
+    };
+  },
+  methods: {
+    upCallback(page) {
+      this.params.page_index = page.num;
+      WXSHOPLIST(this.params)
+        .then(({ data }) => {
+          let list = [];
+          data.data.forEach((e) => {
+            let goods = [];
+            e.goods_list.forEach((g) => {
+              goods.push({
+                goods_id: g.goods_id,
+                image: g.pic_cover,
+                price: g.goods_price,
+              });
+            });
+            let title = e.shop_name;
+            if (e.group_name && e.is_visible) {
+              title = title + "/" + e.group_name;
+            }
+            list.push({
+              to:
+                "/packages/smallshop/home?wx_id=" +
+                e.id +
+                "&previous_route=guangguang",
+              shop_id: e.id,
+              has_store: e.has_store,
+              title: title,
+              logo: e.logo,
+              score: e.comprehensive,
+              goods: goods,
+              background: e.background,
+              goods_count: e.goods_count,
+              collection: e.collection,
+              fictitious_collection: e.fictitious_collection,
+              fictitious_order: e.fictitious_order,
+            });
+          });
+          this.concatList(list, data.total_count);
+        })
+        .catch(() => {
+          this.$load.endErr();
+        });
+    },
+    onTabSort(e) {
+      e.page_index = 1;
+      this.params = Object.assign({ ...this.params }, { ...e });
+      this.resetList();
+    },
+    onSearch(searchText) {
+      this.params.page_index = 1;
+      this.params.search_text = searchText;
+      this.resetList();
+    },
+  },
+  components: {
+    tabSortScreen,
+    panelGroup,
+  },
+};
+</script>
+
+<style lang="scss" scoped>
+.tag {
+  display: flex;
+  flex-flow: row;
+
+  .t {
+    margin-right: 10rpx;
+  }
+}
+</style>

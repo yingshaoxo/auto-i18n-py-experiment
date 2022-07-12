@@ -1,0 +1,35 @@
+{
+  "extEnable": true,
+  "ext": {
+    "project_name": "",
+    "auth_key": "",
+    "domain": "http://shopdadmin.cheyun666.com",
+    "domain_wap": "",
+    "website_id": 0
+  },
+  "extAppid": "wx648923fe9e2b1054",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/mall/index",
+        "text": ""
+      },
+      {
+        "pagePath": "pages/goods/category",
+        "text": ""
+      },
+      {
+        "pagePath": "pages/distribute/index",
+        "text": ""
+      },
+      {
+        "pagePath": "pages/mall/cart",
+        "text": ""
+      },
+      {
+        "pagePath": "pages/member/index",
+        "text": ""
+      }
+    ]
+  }
+}

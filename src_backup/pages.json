@@ -1,0 +1,2220 @@
+{
+  "pages": [
+    {
+      "path": "pages/mall/index",
+      "alias": [
+        "/mall",
+        "/mall/index"
+      ],
+      "style": {
+        "navigationBarTitleText": "",
+        // #ifndef H5
+        "navigationStyle": "custom",
+        // #endif
+        "enablePullDownRefresh": true
+      }
+    },
+    // #ifdef MP-WEIXIN
+    {
+      "path": "pages/index/index",
+      "style": {}
+    },
+    {
+      "path": "pages/goods/detail/index",
+      "style": {}
+    },
+    // #endif
+    {
+      "path": "pages/mall/cart",
+      "style": {
+        "navigationBarTitleText": "購物車"
+      }
+    },
+    {
+      "path": "pages/goods/list",
+      "style": {
+        "navigationBarTitleText": "商品列表",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/goods/category",
+      "style": {
+        "navigationBarTitleText": "商品分類"
+      }
+    },
+    {
+      "path": "pages/order/list",
+      "style": {
+        "navigationBarTitleText": "訂單列表"
+      }
+    },
+    {
+      "path": "pages/member/index",
+      "style": {
+        "navigationBarTitleText": "",
+        // #ifndef H5
+        "navigationStyle": "custom",
+        // #endif
+        "enablePullDownRefresh": true
+      }
+    },
+    // #ifndef MP
+    {
+      "path": "pages/member/bind",
+      "style": {
+        "navigationStyle": "custom",
+        "app-plus": {
+          "animationType": "fade-in",
+          "background": "transparent",
+          "backgroundColor": "rgba(0,0,0,0)",
+          "popGesture": "none"
+        }
+      }
+    },
+    // #endif
+    {
+      "path": "pages/property/index",
+      "style": {
+        "navigationBarTitleText": "我的資產"
+      }
+    },
+    {
+      "path": "pages/coupon/index",
+      "style": {
+        "navigationBarTitleText": "領券中心"
+      }
+    },
+    {
+      "path": "pages/shop/list",
+      "style": {
+        "navigationBarTitleText": "店鋪街",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/smallshop/list",
+      "style": {
+        "navigationBarTitleText": "微商列表",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/store/list",
+      "style": {
+        "navigationBarTitleText": "門店列表"
+      }
+    },
+    {
+      "path": "pages/distribute/index",
+      "style": {
+        "navigationBarTitleText": "",
+        // #ifndef H5
+        "navigationStyle": "custom",
+        // #endif
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/bonus/index",
+      "style": {
+        // #ifndef H5
+        "navigationStyle": "custom",
+        // #endif
+        "navigationBarTitleText": "分紅中心"
+      }
+    },
+    {
+      "path": "pages/smallshop/index",
+      "style": {
+        // #ifndef H5
+        "navigationStyle": "custom",
+        // #endif
+        "navigationBarTitleText": "微小店"
+      }
+    },
+    {
+      "path": "pages/channel/index",
+      "style": {
+        // #ifndef H5
+        "navigationStyle": "custom",
+        // #endif
+        "navigationBarTitleText": "微商中心"
+      }
+    },
+    {
+      "path": "pages/agent/index",
+      "style": {
+        // #ifndef H5
+        "navigationStyle": "custom",
+        // #endif
+        "navigationBarTitleText": "代理中心"
+      }
+    },
+    {
+      "path": "pages/microshop/index",
+      "style": {
+        // #ifndef H5
+        "navigationStyle": "custom",
+        // #endif
+        "navigationBarTitleText": "微店中心"
+      }
+    },
+    {
+      "path": "pages/integral/index",
+      "style": {
+        // #ifdef H5
+        "navigationStyle": "custom",
+        // #endif
+        "navigationBarTitleText": "積分商城"
+      }
+    },
+    {
+      "path": "pages/thingcircle/index",
+      "style": {
+        // #ifdef H5
+        "navigationStyle": "custom",
+        // #endif
+        "navigationBarTitleText": "好物圈"
+      }
+    },
+    {
+      "path": "pages/blockchain/list",
+      "style": {
+        "navigationBarTitleText": "數字資產"
+      }
+    },
+    {
+      "path": "pages/message/index",
+      "style": {
+        "navigationBarTitleText": "消息中心"
+      }
+    },
+    {
+      "path": "pages/task/index",
+      "style": {
+        // #ifndef H5
+        "navigationStyle": "custom",
+        // #endif
+        "navigationBarTitleText": "任務中心"
+      }
+    },
+    {
+      "path": "pages/signin/index",
+      "style": {
+        // #ifndef H5
+        "navigationStyle": "custom",
+        // #endif
+        "navigationBarTitleText": "每日簽到"
+      }
+    },
+    {
+      "path": "pages/help/index",
+      "style": {
+        "navigationBarTitleText": "幫助中心"
+      }
+    },
+    {
+      "path": "pages/mplive/index",
+      "style": {
+        "navigationBarTitleText": "小程序直播"
+      }
+    },
+    {
+      "path": "pages/live/index",
+      "style": {
+        "navigationBarTitleText": "直播廣場"
+      }
+    },
+    {
+      "path": "pages/merchant/index",
+      "style": {
+        "navigationBarTitleText": "招商中心"
+      }
+    }
+  ],
+  "subPackages": [
+    {
+      "root": "pay",
+      "pages": [
+        {
+          "path": "payment",
+          "style": {
+            "navigationBarTitleText": "收銀臺"
+          }
+        },
+        {
+          "path": "level",
+          "style": {
+            "navigationBarTitleText": "付費等級"
+          }
+        },
+        {
+          "path": "wallet",
+          "style": {
+            "navigationBarTitleText": "創建錢包"
+          }
+        },
+        {
+          "path": "membercard",
+          "style": {
+            "navigationBarTitleText": "會員卡"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/mall",
+      "pages": [
+        {
+          "path": "search",
+          "style": {
+            "navigationBarTitleText": "搜索"
+          }
+        },
+        {
+          "path": "diy",
+          "style": {
+            "navigationBarTitleText": "自定義頁面",
+            // #ifdef H5
+            "navigationStyle": "custom",
+            // #endif
+            "enablePullDownRefresh": true
+          }
+        },
+        {
+          "path": "notice",
+          "style": {
+            // #ifdef H5
+            "navigationStyle": "custom",
+            // #endif
+            "navigationBarTitleText": "公告"
+          }
+        },
+        {
+          "path": "contract",
+          "style": {
+            "navigationBarTitleText": "協議"
+          }
+        },
+        {
+          "path": "download",
+          "style": {
+            "navigationBarTitleText": "下載"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/login",
+      "pages": [
+        // #ifndef MP
+        {
+          "path": "register",
+          "style": {
+            // #ifdef H5
+            "navigationStyle": "custom",
+            // #endif
+            "navigationBarTitleText": "會員注冊"
+          }
+        },
+        {
+          "path": "forget",
+          "style": {
+            // #ifdef H5
+            "navigationStyle": "custom",
+            // #endif
+            "navigationBarTitleText": "忘記密碼"
+          }
+        },
+        // #endif
+        {
+          "path": "index",
+          "style": {
+            // #ifdef H5
+            "navigationStyle": "custom",
+            // #endif
+            "navigationBarTitleText": "會員登錄"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/pay",
+      "pages": [
+        {
+          "path": "payment",
+          "style": {
+            "navigationBarTitleText": "收銀臺"
+          }
+        },
+        {
+          "path": "result",
+          "style": {
+            "navigationBarTitleText": "支付結果"
+          }
+        },
+        {
+          "path": "guide",
+          "style": {
+            "navigationBarTitleText": "支付提示"
+          }
+        },
+        {
+          "path": "wallet",
+          "style": {
+            "navigationBarTitleText": "創建錢包"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/goods",
+      "pages": [
+        {
+          "path": "detail",
+          "style": {
+            "navigationBarTitleText": "商品詳情"
+          }
+        },
+        {
+          "path": "screen",
+          "style": {
+            "navigationBarTitleText": "商品列表"
+          }
+        },
+        {
+          "path": "collect",
+          "style": {
+            "navigationBarTitleText": "商品收藏"
+          }
+        },
+        {
+          "path": "share",
+          "style": {
+            "navigationBarTitleText": "商品分享"
+          }
+        },
+        {
+          "path": "schedule",
+          "style": {
+            "navigationBarTitleText": ""
+          }
+        },
+        {
+          "path": "evaluate",
+          "style": {
+            "navigationBarTitleText": "評價"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/order",
+      "pages": [
+        {
+          "path": "confirm",
+          "style": {
+            "navigationBarTitleText": "確認訂單"
+          }
+        },
+        {
+          "path": "detail",
+          "style": {
+            "navigationBarTitleText": "訂單詳情"
+          }
+        },
+        {
+          "path": "post",
+          "style": {
+            "navigationBarTitleText": "退貨退款"
+          }
+        },
+        {
+          "path": "logistics",
+          "style": {
+            "navigationBarTitleText": "物流信息"
+          }
+        },
+        {
+          "path": "evaluate",
+          "style": {
+            "navigationBarTitleText": "商品評價"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/member",
+      "pages": [
+        {
+          "path": "set",
+          "style": {
+            "navigationBarTitleText": "賬號設置"
+          }
+        },
+        {
+          "path": "info",
+          "style": {
+            "navigationBarTitleText": "基本信息"
+          }
+        },
+        {
+          "path": "avatar",
+          "style": {
+            "navigationBarTitleText": "修改頭像"
+          }
+        },
+        {
+          "path": "post",
+          "style": {
+            "navigationBarTitleText": "賬號修改"
+          }
+        },
+        {
+          "path": "relevant",
+          "style": {
+            "navigationBarTitleText": "關聯賬號"
+          }
+        },
+        {
+          "path": "level",
+          "style": {
+            "navigationBarTitleText": "等級詳情"
+          }
+        },
+        {
+          "path": "address/list",
+          "style": {
+            "navigationBarTitleText": "收貨地址"
+          }
+        },
+        {
+          "path": "address/post",
+          "style": {
+            "navigationBarTitleText": "編輯收貨地址"
+          }
+        },
+        {
+          "path": "invoice/list",
+          "style": {
+            "navigationBarTitleText": "發票抬頭管理"
+          }
+        },
+        {
+          "path": "invoice/post",
+          "style": {
+            "navigationBarTitleText": "編輯發票抬頭"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/property",
+      "pages": [
+        {
+          "path": "account/list",
+          "style": {
+            "navigationBarTitleText": "賬戶列表"
+          }
+        },
+        {
+          "path": "account/post",
+          "style": {
+            "navigationBarTitleText": "編輯賬戶"
+          }
+        },
+        {
+          "path": "account/detail",
+          "style": {
+            "navigationBarTitleText": "賬戶詳情"
+          }
+        },
+        {
+          "path": "balance",
+          "style": {
+            "navigationBarTitleText": "詳情"
+          }
+        },
+        {
+          "path": "log/list",
+          "style": {
+            "navigationBarTitleText": "明細"
+          }
+        },
+        {
+          "path": "log/detail",
+          "style": {
+            "navigationBarTitleText": "明細詳情"
+          }
+        },
+        {
+          "path": "recharge",
+          "style": {
+            "navigationBarTitleText": "充值"
+          }
+        },
+        {
+          "path": "withdraw",
+          "style": {
+            "navigationBarTitleText": "提現"
+          }
+        },
+        {
+          "path": "points",
+          "style": {
+            "navigationBarTitleText": "積分"
+          }
+        },
+        {
+          "path": "exchange",
+          "style": {
+            "navigationBarTitleText": "兌換"
+          }
+        },
+        {
+          "path": "transfer",
+          "style": {
+            "navigationBarTitleText": "轉賬"
+          }
+        },
+        {
+          "path": "integraltransfer",
+          "style": {
+            "navigationBarTitleText": "轉贈"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/friendster",
+      "pages": [
+        {
+          "path": "index",
+          "style": {
+            "navigationBarTitleText": "朋友圈"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/shop",
+      "pages": [
+        {
+          "path": "home",
+          "style": {
+            "navigationBarTitleText": "店鋪首頁",
+            // #ifdef H5
+            "navigationStyle": "custom",
+            // #endif
+            "enablePullDownRefresh": true
+          }
+        },
+        {
+          "path": "collect",
+          "style": {
+            "navigationBarTitleText": "店鋪收藏"
+          }
+        },
+        {
+          "path": "search",
+          "style": {
+            "navigationBarTitleText": "店鋪搜索"
+          }
+        },
+        {
+          "path": "business/index",
+          "style": {
+            "navigationBarTitleText": "商家中心"
+          }
+        },
+        {
+          "path": "business/apply",
+          "style": {
+            "navigationBarTitleText": "商家入駐"
+          }
+        },
+        {
+          "path": "contact",
+          "style": {
+            "navigationBarTitleText": "聯繫我們"
+          }
+        },
+        {
+          "path": "business/result",
+          "style": {
+            "navigationBarTitleText": "申請狀態"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/store",
+      "pages": [
+        {
+          "path": "home",
+          "style": {
+            // #ifdef H5
+            "navigationStyle": "custom",
+            // #endif
+            "navigationBarTitleText": "門店首頁"
+          }
+        },
+        {
+          "path": "search",
+          "style": {
+            "navigationBarTitleText": "門店搜索"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/coupon",
+      "pages": [
+        {
+          "path": "list",
+          "style": {
+            "navigationBarTitleText": "我的優惠券"
+          }
+        },
+        {
+          "path": "detail",
+          "style": {
+            "navigationBarTitleText": "優惠券詳情"
+          }
+        },
+        {
+          "path": "receive",
+          "style": {
+            "navigationBarTitleText": "領取優惠券"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/distribute",
+      "pages": [
+        {
+          "path": "apply",
+          "style": {
+            "navigationBarTitleText": "申請分銷商"
+          }
+        },
+        {
+          "path": "qrcode",
+          "style": {
+            "navigationBarTitleText": "推廣碼"
+          }
+        },
+        {
+          "path": "detail",
+          "style": {
+            "navigationBarTitleText": "佣金"
+          }
+        },
+        {
+          "path": "log",
+          "style": {
+            "navigationBarTitleText": "佣金明細"
+          }
+        },
+        {
+          "path": "order",
+          "style": {
+            "navigationBarTitleText": "分銷訂單"
+          }
+        },
+        {
+          "path": "team",
+          "style": {
+            "navigationBarTitleText": "我的團隊"
+          }
+        },
+        {
+          "path": "customer",
+          "style": {
+            "navigationBarTitleText": "我的客戶"
+          }
+        },
+        {
+          "path": "withdraw",
+          "style": {
+            "navigationBarTitleText": "佣金提現"
+          }
+        },
+        {
+          "path": "credential",
+          "style": {
+            "navigationBarTitleText": "授權證書"
+          }
+        },
+        {
+          "path": "ranking",
+          "style": {
+            "navigationBarTitleText": "排行榜"
+          }
+        },
+        {
+          "path": "level",
+          "style": {
+            "navigationBarTitleText": "等級詳情"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/bonus",
+      "pages": [
+        {
+          "path": "apply",
+          "style": {
+            "navigationBarTitleText": "申請代理"
+          }
+        },
+        {
+          "path": "detail",
+          "style": {
+            "navigationBarTitleText": "分紅金額"
+          }
+        },
+        {
+          "path": "log",
+          "style": {
+            "navigationBarTitleText": "分红明細"
+          }
+        },
+        {
+          "path": "order",
+          "style": {
+            "navigationBarTitleText": "分紅訂單"
+          }
+        },
+        {
+          "path": "credential",
+          "style": {
+            "navigationBarTitleText": "授權證書"
+          }
+        },
+        {
+          "path": "level",
+          "style": {
+            "navigationBarTitleText": "等級詳情"
+          }
+        },
+        {
+          "path": "delivery/list",
+          "style": {
+            "navigationBarTitleText": "發貨訂單"
+          }
+        },
+        {
+          "path": "delivery/post",
+          "style": {
+            "navigationBarTitleText": "訂單發貨"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/channel",
+      "pages": [
+        {
+          "path": "apply",
+          "style": {
+            "navigationBarTitleText": "申請渠道商"
+          }
+        },
+        {
+          "path": "goods",
+          "style": {
+            "navigationBarTitleText": "商品"
+          }
+        },
+        {
+          "path": "team",
+          "style": {
+            "navigationBarTitleText": "我的團隊"
+          }
+        },
+        {
+          "path": "depot/index",
+          "style": {
+            "navigationBarTitleText": "我的倉庫"
+          }
+        },
+        {
+          "path": "depot/log",
+          "style": {
+            "navigationBarTitleText": "雲倉日誌"
+          }
+        },
+        {
+          "path": "depot/list",
+          "style": {
+            "navigationBarTitleText": "雲倉庫"
+          }
+        },
+        {
+          "path": "depot/detail",
+          "style": {
+            "navigationBarTitleText": "商品明細"
+          }
+        },
+        {
+          "path": "achieve",
+          "style": {
+            "navigationBarTitleText": "我的業績"
+          }
+        },
+        {
+          "path": "finance",
+          "style": {
+            "navigationBarTitleText": "財務管理"
+          }
+        },
+        {
+          "path": "order/list",
+          "style": {
+            "navigationBarTitleText": "訂單列表"
+          }
+        },
+        {
+          "path": "order/detail",
+          "style": {
+            "navigationBarTitleText": "訂單詳情"
+          }
+        },
+        {
+          "path": "order/confirm",
+          "style": {
+            "navigationBarTitleText": "確認訂單"
+          }
+        },
+        {
+          "path": "credential",
+          "style": {
+            "navigationBarTitleText": "授權證書"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/agent",
+      "pages": [
+        {
+          "path": "apply",
+          "style": {
+            "navigationBarTitleText": "申請"
+          }
+        },
+        {
+          "path": "qrcode",
+          "style": {
+            "navigationBarTitleText": "推廣碼"
+          }
+        },
+        {
+          "path": "detail",
+          "style": {
+            "navigationBarTitleText": "代理佣金"
+          }
+        },
+        {
+          "path": "log",
+          "style": {
+            "navigationBarTitleText": "佣金明細"
+          }
+        },
+        {
+          "path": "team",
+          "style": {
+            "navigationBarTitleText": "我的團隊"
+          }
+        },
+        {
+          "path": "customer",
+          "style": {
+            "navigationBarTitleText": "我的客戶"
+          }
+        },
+        {
+          "path": "withdraw",
+          "style": {
+            "navigationBarTitleText": "佣金提現"
+          }
+        },
+        {
+          "path": "credential",
+          "style": {
+            "navigationBarTitleText": "授權證書"
+          }
+        },
+        {
+          "path": "ranking",
+          "style": {
+            "navigationBarTitleText": "排行榜"
+          }
+        },
+        {
+          "path": "level",
+          "style": {
+            "navigationBarTitleText": "等級詳情"
+          }
+        },
+        {
+          "path": "goods",
+          "style": {
+            "navigationBarTitleText": "商品"
+          }
+        },
+        {
+          "path": "depot/index",
+          "style": {
+            "navigationBarTitleText": "我的倉庫"
+          }
+        },
+        {
+          "path": "depot/log",
+          "style": {
+            "navigationBarTitleText": "雲倉日誌"
+          }
+        },
+        {
+          "path": "depot/list",
+          "style": {
+            "navigationBarTitleText": "雲倉庫"
+          }
+        },
+        {
+          "path": "depot/detail",
+          "style": {
+            "navigationBarTitleText": "商品明細"
+          }
+        },
+        {
+          "path": "achieve",
+          "style": {
+            "navigationBarTitleText": "我的業績"
+          }
+        },
+        {
+          "path": "achievereward",
+          "style": {
+            "navigationBarTitleText": "業績獎"
+          }
+        },
+        {
+          "path": "order/list",
+          "style": {
+            "navigationBarTitleText": "訂單列表"
+          }
+        },
+        {
+          "path": "order/detail",
+          "style": {
+            "navigationBarTitleText": "訂單詳情"
+          }
+        },
+        {
+          "path": "order/confirm",
+          "style": {
+            "navigationBarTitleText": "確認訂單"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/microshop",
+      "pages": [
+        {
+          "path": "apply",
+          "style": {
+            "navigationBarTitleText": "申請"
+          }
+        },
+        {
+          "path": "home",
+          "style": {
+            // #ifdef H5
+            "navigationStyle": "custom",
+            // #endif
+            "navigationBarTitleText": "我的微店"
+          }
+        },
+        {
+          "path": "qrcode",
+          "style": {
+            "navigationBarTitleText": "分享微店"
+          }
+        },
+        {
+          "path": "profit/detail",
+          "style": {
+            "navigationBarTitleText": "微店收益"
+          }
+        },
+        {
+          "path": "profit/log",
+          "style": {
+            "navigationBarTitleText": "收益明細"
+          }
+        },
+        {
+          "path": "profit/withdraw",
+          "style": {
+            "navigationBarTitleText": "收益提現"
+          }
+        },
+        {
+          "path": "level",
+          "style": {
+            "navigationBarTitleText": "等級中心"
+          }
+        },
+        {
+          "path": "goods/category",
+          "style": {
+            "navigationBarTitleText": "商品分類"
+          }
+        },
+        {
+          "path": "goods/list",
+          "style": {
+            "navigationBarTitleText": "商品列表"
+          }
+        },
+        {
+          "path": "set/index",
+          "style": {
+            "navigationBarTitleText": "微店管理"
+          }
+        },
+        {
+          "path": "set/info",
+          "style": {
+            "navigationBarTitleText": "微店信息"
+          }
+        },
+        {
+          "path": "set/logo",
+          "style": {
+            "navigationBarTitleText": "logo"
+          }
+        },
+        {
+          "path": "order/confirm",
+          "style": {
+            "navigationBarTitleText": "確認訂單"
+          }
+        },
+        {
+          "path": "credential",
+          "style": {
+            "navigationBarTitleText": "授權證書"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/integral",
+      "pages": [
+        {
+          "path": "goods/list",
+          "style": {
+            "navigationBarTitleText": "商品列表"
+          }
+        },
+        {
+          "path": "goods/category",
+          "style": {
+            "navigationBarTitleText": "商品分類"
+          }
+        },
+        {
+          "path": "goods/detail",
+          "style": {
+            "navigationBarTitleText": "商品詳情"
+          }
+        },
+        {
+          "path": "order/confirm",
+          "style": {
+            "navigationBarTitleText": "確認訂單"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/message",
+      "pages": [
+        {
+          "path": "notice",
+          "style": {
+            "navigationBarTitleText": "消息通知"
+          }
+        },
+        {
+          "path": "wxnotice",
+          "style": {
+            "navigationBarTitleText": "微店信息"
+          }
+        },
+        {
+          "path": "list",
+          "style": {
+            "navigationBarTitleText": "消息列表"
+          }
+        },
+        {
+          "path": "chat",
+          "style": {
+            "navigationBarTitleText": "消息會話"
+          }
+        },
+        {
+          "path": "wxchat",
+          "style": {
+            "navigationBarTitleText": "消息會話"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/wheelsurf",
+      "pages": [
+        {
+          "path": "index",
+          "style": {
+            "navigationBarTitleText": "幸運大轉盤"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/smashegg",
+      "pages": [
+        {
+          "path": "index",
+          "style": {
+            "navigationBarTitleText": "砸金蛋"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/prize",
+      "pages": [
+        {
+          "path": "list",
+          "style": {
+            "navigationBarTitleText": "獎品列表"
+          }
+        },
+        {
+          "path": "confirm",
+          "style": {
+            "navigationBarTitleText": "獎品確認"
+          }
+        },
+        {
+          "path": "result",
+          "style": {
+            "navigationBarTitleText": "領取結果"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/scratchcard",
+      "pages": [
+        {
+          "path": "index",
+          "style": {
+            "navigationBarTitleText": "刮刮樂"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/followgift",
+      "pages": [
+        {
+          "path": "index",
+          "style": {
+            "navigationBarTitleText": "關注有禮"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/festivalcare",
+      "pages": [
+        {
+          "path": "index",
+          "style": {
+            "navigationBarTitleText": "節日關懷"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/signin",
+      "pages": [
+        {
+          "path": "log",
+          "style": {
+            "navigationBarTitleText": "签到明細"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/task",
+      "pages": [
+        {
+          "path": "list",
+          "style": {
+            "navigationBarTitleText": "我的任務"
+          }
+        },
+        {
+          "path": "detail",
+          "style": {
+            "navigationBarTitleText": "任务詳情"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/course",
+      "pages": [
+        {
+          "path": "list",
+          "style": {
+            "navigationBarTitleText": "我的課程"
+          }
+        },
+        {
+          "path": "detail",
+          "style": {
+            "navigationBarTitleText": "课程詳情"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/invoice",
+      "pages": [
+        {
+          "path": "detail",
+          "style": {
+            "navigationBarTitleText": "发票詳情"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/anticounterfeiting",
+      "pages": [
+        {
+          "path": "index",
+          "style": {
+            "navigationBarTitleText": "防偽溯源商品查詢"
+          }
+        },
+        {
+          "path": "result",
+          "style": {
+            "navigationBarTitleText": "查詢結果"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/credential",
+      "pages": [
+        {
+          "path": "index",
+          "style": {
+            "navigationBarTitleText": "查询授權證書"
+          }
+        },
+        {
+          "path": "result",
+          "style": {
+            "navigationBarTitleText": "授權證書查詢結果"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/thingcircle",
+      "pages": [
+        {
+          "path": "detail",
+          "style": {
+            // #ifdef H5
+            "navigationStyle": "custom",
+            // #endif
+            "navigationBarTitleText": "干货詳情"
+          }
+        },
+        {
+          "path": "mine",
+          "style": {
+            // #ifdef H5
+            "navigationStyle": "custom",
+            // #endif
+            "navigationBarTitleText": "我的"
+          }
+        },
+        {
+          "path": "report",
+          "style": {
+            "navigationBarTitleText": "舉報評論"
+          }
+        },
+        {
+          "path": "fans",
+          "style": {
+            "navigationBarTitleText": "我的粉絲"
+          }
+        },
+        {
+          "path": "follow",
+          "style": {
+            "navigationBarTitleText": "我的關注"
+          }
+        },
+        {
+          "path": "release/index",
+          "style": {
+            "navigationBarTitleText": "發布乾貨"
+          }
+        },
+        {
+          "path": "release/goods",
+          "style": {
+            "navigationBarTitleText": "推薦商品"
+          }
+        },
+        {
+          "path": "release/topic",
+          "style": {
+            "navigationBarTitleText": "話題"
+          }
+        },
+        {
+          "path": "release/location",
+          "style": {
+            "navigationBarTitleText": "定位"
+          }
+        },
+        {
+          "path": "collect",
+          "style": {
+            "navigationBarTitleText": "贊和收藏"
+          }
+        },
+        {
+          "path": "comment",
+          "style": {
+            "navigationBarTitleText": "評論和@"
+          }
+        },
+        {
+          "path": "notice",
+          "style": {
+            "navigationBarTitleText": "消息通知"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/blockchain",
+      "pages": [
+        {
+          "path": "index",
+          "style": {
+            "navigationBarTitleText": "數字錢包中心"
+          }
+        },
+        {
+          "path": "wallet",
+          "style": {
+            "navigationBarTitleText": "錢包地址"
+          }
+        },
+        {
+          "path": "trade/log",
+          "style": {
+            "navigationBarTitleText": "交易明細"
+          }
+        },
+        {
+          "path": "trade/detail",
+          "style": {
+            "navigationBarTitleText": "交易詳情"
+          }
+        },
+        {
+          "path": "exchange",
+          "style": {
+            "navigationBarTitleText": "兌換"
+          }
+        },
+        {
+          "path": "transfer",
+          "style": {
+            "navigationBarTitleText": "轉賬"
+          }
+        },
+        {
+          "path": "export",
+          "style": {
+            "navigationBarTitleText": "導出"
+          }
+        },
+        {
+          "path": "resource",
+          "style": {
+            "navigationBarTitleText": "EOS資源"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/assemble",
+      "pages": [
+        {
+          "path": "list",
+          "style": {
+            "navigationBarTitleText": "拼團列表"
+          }
+        },
+        {
+          "path": "detail",
+          "style": {
+            "navigationBarTitleText": "拼团詳情"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/seckill",
+      "pages": [
+        {
+          "path": "list",
+          "style": {
+            "navigationBarTitleText": "秒殺列表"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/bargain",
+      "pages": [
+        {
+          "path": "list",
+          "style": {
+            "navigationBarTitleText": "砍價列表"
+          }
+        },
+        {
+          "path": "detail",
+          "style": {
+            "navigationBarTitleText": "砍价詳情"
+          }
+        },
+        {
+          "path": "mybargainlist",
+          "style": {
+            "navigationBarTitleText": "我的砍價"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/giftvoucher",
+      "pages": [
+        {
+          "path": "list",
+          "style": {
+            "navigationBarTitleText": "禮品券列表"
+          }
+        },
+        {
+          "path": "detail",
+          "style": {
+            "navigationBarTitleText": "礼品券詳情"
+          }
+        },
+        {
+          "path": "receive",
+          "style": {
+            "navigationBarTitleText": "領取禮品券"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/voucherpackage",
+      "pages": [
+        {
+          "path": "index",
+          "style": {
+            "navigationBarTitleText": "券包詳情"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/consumercard",
+      "pages": [
+        {
+          "path": "list",
+          "style": {
+            "navigationBarTitleText": "消費卡"
+          }
+        },
+        {
+          "path": "detail",
+          "style": {
+            "navigationBarTitleText": "消費卡詳情"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/deliverycode",
+      "pages": [
+        {
+          "path": "list",
+          "style": {
+            "navigationBarTitleText": "領貨碼"
+          }
+        },
+        {
+          "path": "bindcode",
+          "style": {
+            "navigationBarTitleText": "绑定領貨碼"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/help",
+      "pages": [
+        {
+          "path": "list",
+          "style": {
+            "navigationBarTitleText": "幫助分類列表"
+          }
+        },
+        {
+          "path": "detail",
+          "style": {
+            "navigationBarTitleText": "帮助詳情"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/mplive",
+      "pages": [
+        {
+          "path": "list",
+          "style": {
+            "navigationBarTitleText": "直播廣場"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/membercard",
+      "pages": [
+        {
+          "path": "index",
+          "style": {
+            "navigationBarTitleText": "會員卡"
+          }
+        },
+        {
+          "path": "code",
+          "style": {
+            "navigationBarTitleText": "會員碼"
+          }
+        },
+        {
+          "path": "profit",
+          "style": {
+            "navigationBarTitleText": "權益介紹"
+          }
+        },
+        {
+          "path": "recharge",
+          "style": {
+            "navigationBarTitleText": "充值"
+          }
+        },
+        {
+          "path": "upgrade",
+          "style": {
+            "navigationBarTitleText": "升級"
+          }
+        },
+        {
+          "path": "log/list",
+          "style": {
+            "navigationBarTitleText": "明細列表"
+          }
+        },
+        {
+          "path": "log/detail",
+          "style": {
+            "navigationBarTitleText": "明細詳情"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/live",
+      "pages": [
+        {
+          "path": "player",
+          "style": {
+            // #ifdef MP-WEIXIN
+            "navigationStyle": "custom",
+            // #endif
+            "navigationBarTitleText": "直播間"
+          }
+        },
+        {
+          "path": "notice",
+          "style": {
+            // #ifdef MP-WEIXIN
+            "navigationStyle": "custom",
+            // #endif
+            "navigationBarTitleText": "開播通告"
+          }
+        },
+        {
+          "path": "end",
+          "style": {
+            // #ifdef MP-WEIXIN
+            "navigationStyle": "custom",
+            // #endif
+            "navigationBarTitleText": "直播結束"
+          }
+        },
+        {
+          "path": "report",
+          "style": {
+            "navigationBarTitleText": "舉報"
+          }
+        },
+        {
+          "path": "anchor/player",
+          "style": {
+            // #ifdef MP-WEIXIN
+            "navigationStyle": "custom",
+            // #endif
+            "navigationBarTitleText": "主播間"
+          }
+        },
+        {
+          "path": "anchor/apply",
+          "style": {
+            "navigationBarTitleText": "直播申請"
+          }
+        },
+        {
+          "path": "anchor/info",
+          "style": {
+            // #ifdef MP-WEIXIN
+            "navigationStyle": "custom",
+            // #endif
+            "navigationBarTitleText": "開播信息"
+          }
+        },
+        {
+          "path": "anchor/notice",
+          "style": {
+            "navigationBarTitleText": "開播通告"
+          }
+        },
+        {
+          "path": "anchor/set",
+          "style": {
+            // #ifdef MP-WEIXIN
+            "navigationStyle": "custom",
+            // #endif
+            "navigationBarTitleText": "開播設置"
+          }
+        },
+        {
+          "path": "anchor/goods",
+          "style": {
+            "navigationBarTitleText": "添加商品"
+          }
+        },
+        {
+          "path": "anchor/end",
+          "style": {
+            // #ifdef MP-WEIXIN
+            "navigationStyle": "custom",
+            // #endif
+            "navigationBarTitleText": "直播結束"
+          }
+        },
+        {
+          "path": "mine/index",
+          "style": {
+            "navigationBarTitleText": "我的"
+          }
+        },
+        {
+          "path": "mine/apply",
+          "style": {
+            "navigationBarTitleText": "申請"
+          }
+        },
+        {
+          "path": "mine/info",
+          "style": {
+            "navigationBarTitleText": "主播信息"
+          }
+        },
+        {
+          "path": "mine/follow",
+          "style": {
+            "navigationBarTitleText": "我的關注"
+          }
+        },
+        {
+          "path": "mine/fans",
+          "style": {
+            "navigationBarTitleText": "我的粉絲"
+          }
+        },
+        {
+          "path": "mine/shop",
+          "style": {
+            "navigationBarTitleText": "主播小店"
+          }
+        },
+        {
+          "path": "mine/goods",
+          "style": {
+            "navigationBarTitleText": "挑選商品"
+          }
+        },
+        {
+          "path": "mine/history",
+          "style": {
+            "navigationBarTitleText": "觀看歷史"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/merchant",
+      "pages": [
+        {
+          "path": "apply",
+          "style": {
+            "navigationBarTitleText": "申請"
+          }
+        },
+        {
+          "path": "detail",
+          "style": {
+            "navigationBarTitleText": "詳情"
+          }
+        },
+        {
+          "path": "log",
+          "style": {
+            "navigationBarTitleText": "明細"
+          }
+        },
+        {
+          "path": "member",
+          "style": {
+            "navigationBarTitleText": "招商員"
+          }
+        },
+        {
+          "path": "order",
+          "style": {
+            "navigationBarTitleText": "訂單列表"
+          }
+        },
+        {
+          "path": "qrcode",
+          "style": {
+            "navigationBarTitleText": "推廣碼"
+          }
+        },
+        {
+          "path": "ranking",
+          "style": {
+            "navigationBarTitleText": "排行榜"
+          }
+        },
+        {
+          "path": "shop",
+          "style": {
+            "navigationBarTitleText": "店鋪"
+          }
+        },
+        {
+          "path": "team",
+          "style": {
+            "navigationBarTitleText": "我的團隊"
+          }
+        },
+        {
+          "path": "withdraw",
+          "style": {
+            "navigationBarTitleText": "提現"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/level",
+      "pages": [
+        {
+          "path": "index",
+          "style": {
+            "navigationBarTitleText": "等級中心"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/cps",
+      "pages": [
+        {
+          "path": "list",
+          "style": {
+            "navigationBarTitleText": ""
+          }
+        },
+        {
+          "path": "detail",
+          "style": {
+            "navigationBarTitleText": "商品詳情"
+          }
+        },
+        {
+          "path": "rule",
+          "style": {
+            "navigationBarTitleText": "規則"
+          }
+        },
+        {
+          "path": "search",
+          "style": {
+            "navigationBarTitleText": "商品搜索"
+          }
+        },
+        {
+          "path": "search/result",
+          "style": {
+            "navigationBarTitleText": "搜索結果"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/lucklyspell",
+      "pages": [
+        {
+          "path": "detail",
+          "style": {
+            "navigationBarTitleText": "幸运拼团詳情"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/supplier",
+      "pages": [
+        {
+          "path": "apply",
+          "style": {
+            "navigationBarTitleText": "供應商入駐"
+          }
+        }
+      ]
+    },
+    {
+      "root": "packages/smallshop",
+      "pages": [
+        {
+          "path": "goodslist",
+          "style": {
+            "navigationBarTitleText": "商品庫"
+          }
+        },
+        {
+          "path": "orderlist",
+          "style": {
+            "navigationBarTitleText": "訂單管理"
+          }
+        },
+        {
+          "path": "asset",
+          "style": {
+            "navigationBarTitleText": "資產管理"
+          }
+        },
+        {
+          "path": "data",
+          "style": {
+            "navigationBarTitleText": "流水記錄"
+          }
+        },
+        {
+          "path": "statistics",
+          "style": {
+            "navigationBarTitleText": "數據統計"
+          }
+        },
+        {
+          "path": "shopcollection",
+          "style": {
+            "navigationBarTitleText": "收藏店鋪"
+          }
+        },
+        {
+          "path": "shop",
+          "style": {
+            "navigationBarTitleText": "我的店鋪"
+          }
+        },
+        {
+          "path": "apply",
+          "style": {
+            "navigationBarTitleText": "入驻申請"
+          }
+        },
+        {
+          "path": "recharge",
+          "style": {
+            "navigationBarTitleText": "充值"
+          }
+        },
+        {
+          "path": "log",
+          "style": {
+            "navigationBarTitleText": "充值記錄"
+          }
+        },
+        {
+          "path": "withdraw",
+          "style": {
+            "navigationBarTitleText": "提現"
+          }
+        },
+        {
+          "path": "home",
+          "style": {
+            "navigationBarTitleText": "微店首頁",
+            // #ifdef H5
+            "navigationStyle": "custom",
+            // #endif
+            "enablePullDownRefresh": true
+          }
+        },
+        {
+          "path": "goodsedit",
+          "style": {
+            "navigationBarTitleText": "商品編輯"
+          }
+        }
+      ]
+    }
+  ],
+  "preloadRule": {
+    "pages/mall/index": {
+      "packages": [
+        "packages/mall",
+        "packages/login"
+      ],
+      "network": "all"
+    },
+    "pages/goods/category": {
+      "packages": [
+        "packages/goods"
+      ],
+      "network": "all"
+    },
+    "pages/order/list": {
+      "packages": [
+        "packages/order"
+      ],
+      "network": "all"
+    },
+    "pages/member/index": {
+      "packages": [
+        "packages/member"
+      ],
+      "network": "all"
+    },
+    "pages/property/index": {
+      "packages": [
+        "packages/property"
+      ],
+      "network": "all"
+    },
+    "pages/coupon/index": {
+      "packages": [
+        "packages/coupon"
+      ],
+      "network": "all"
+    },
+    "pages/shop/list": {
+      "packages": [
+        "packages/shop"
+      ],
+      "network": "all"
+    },
+    "pages/store/list": {
+      "packages": [
+        "packages/store"
+      ],
+      "network": "all"
+    },
+    "pages/distribute/index": {
+      "packages": [
+        "packages/distribute"
+      ],
+      "network": "all"
+    },
+    "pages/bonus/index": {
+      "packages": [
+        "packages/bonus"
+      ],
+      "network": "all"
+    },
+    "pages/channel/index": {
+      "packages": [
+        "packages/channel"
+      ],
+      "network": "all"
+    },
+    "pages/agent/index": {
+      "packages": [
+        "packages/agent"
+      ],
+      "network": "all"
+    },
+    "pages/microshop/index": {
+      "packages": [
+        "packages/microshop"
+      ],
+      "network": "all"
+    },
+    "pages/integral/index": {
+      "packages": [
+        "packages/integral"
+      ],
+      "network": "all"
+    },
+    "pages/thingcircle/index": {
+      "packages": [
+        "packages/thingcircle"
+      ],
+      "network": "all"
+    },
+    "pages/blockchain/list": {
+      "packages": [
+        "packages/blockchain"
+      ],
+      "network": "all"
+    },
+    "pages/message/index": {
+      "packages": [
+        "packages/message"
+      ],
+      "network": "all"
+    },
+    "pages/task/index": {
+      "packages": [
+        "packages/task"
+      ],
+      "network": "all"
+    },
+    "pages/signin/index": {
+      "packages": [
+        "packages/signin"
+      ],
+      "network": "all"
+    },
+    "pages/help/index": {
+      "packages": [
+        "packages/help"
+      ],
+      "network": "all"
+    },
+    "pages/live/index": {
+      "packages": [
+        "packages/live"
+      ],
+      "network": "all"
+    }
+  },
+  "easycom": {
+    "autoscan": false,
+    "custom": {
+      "lk-(.*)": "@/components/lk/$1/$1.vue"
+    }
+  },
+  "tabBar": {
+    "color": "#323233",
+    "selectedColor": "#323233",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      // #ifdef MP-WEIXIN
+      {
+        "pagePath": "pages/mall/index",
+        "text": ""
+      },
+      {
+        "pagePath": "pages/goods/category",
+        "text": ""
+      },
+      {
+        "pagePath": "pages/distribute/index",
+        "text": ""
+      },
+      {
+        "pagePath": "pages/mall/cart",
+        "text": ""
+      },
+      {
+        "pagePath": "pages/member/index",
+        "text": ""
+      }
+      // #endif
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    // #ifdef H5
+    "navigationStyle": "custom",
+    // #endif
+    "backgroundColor": "#F8F8F8"
+  },
+  "pageOrientation": "portrait",
+  "condition": {
+    "current": -1,
+    "list": []
+  }
+}
